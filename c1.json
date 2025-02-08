@@ -1,0 +1,105 @@
+{
+    "level": "C1 (Advanced)",
+    "questions": [
+        {
+            "question": "The report was tantamount ____ an admission of guilt.",
+            "options": [
+                "to",
+                "with",
+                "for",
+                "of"
+            ],
+            "correct_answer": "to"
+        },
+        {
+            "question": "Her success can be attributed ____ her unwavering determination.",
+            "options": [
+                "in",
+                "to",
+                "by",
+                "with"
+            ],
+            "correct_answer": "to"
+        },
+        {
+            "question": "The diplomat was ____ in delicate negotiations.",
+            "options": [
+                "embroiled",
+                "immersed",
+                "submerged",
+                "entangled"
+            ],
+            "correct_answer": "embroiled"
+        },
+        {
+            "question": "The novel's ____ narrative style challenged traditional storytelling.",
+            "options": [
+                "prosaic",
+                "verbose",
+                "laconic",
+                "convoluted"
+            ],
+            "correct_answer": "convoluted"
+        },
+        {
+            "question": "Despite the ____ economic conditions, the company thrived.",
+            "options": [
+                "stringent",
+                "adverse",
+                "benevolent",
+                "conducive"
+            ],
+            "correct_answer": "adverse"
+        },
+        {
+            "question": "The researcher's findings were ____ with previous studies.",
+            "options": [
+                "coherent",
+                "compatible",
+                "consistent",
+                "convergent"
+            ],
+            "correct_answer": "consistent"
+        },
+        {
+            "question": "Her speech was a ____ of the current political situation.",
+            "options": [
+                "testament",
+                "critique",
+                "panegyric",
+                "epilogue"
+            ],
+            "correct_answer": "critique"
+        },
+        {
+            "question": "The proposal seemed ____ at first glance.",
+            "options": [
+                "enigmatic",
+                "lucid",
+                "transparent",
+                "ambiguous"
+            ],
+            "correct_answer": "ambiguous"
+        },
+        {
+            "question": "The committee was ____ in its decision making process.",
+            "options": [
+                "hesitant",
+                "deliberate",
+                "vacillating",
+                "indecisive"
+            ],
+            "correct_answer": "deliberate"
+        },
+        {
+            "question": "His arguments were too ____ to be taken seriously.",
+            "options": [
+                "abstruse",
+                "succinct",
+                "pellucid",
+                "perspicuous"
+            ],
+            "correct_answer": "abstruse"
+        }
+    ]
+}

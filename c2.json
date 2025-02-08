@@ -1,0 +1,105 @@
+{
+    "level": "C2 (Proficiency)",
+    "questions": [
+        {
+            "question": "The politician's rhetoric was ____ with superficial platitudes.",
+            "options": [
+                "replete",
+                "bereft",
+                "devoid",
+                "saturated"
+            ],
+            "correct_answer": "replete"
+        },
+        {
+            "question": "Her writing style was marked by an ____ complexity.",
+            "options": [
+                "arcane",
+                "transparent",
+                "lucid",
+                "pellucid"
+            ],
+            "correct_answer": "arcane"
+        },
+        {
+            "question": "The philosopher's arguments were ____ in their logical progression.",
+            "options": [
+                "tortuous",
+                "linear",
+                "straightforward",
+                "explicit"
+            ],
+            "correct_answer": "tortuous"
+        },
+        {
+            "question": "His interpretation was a ____ of the original text's meaning.",
+            "options": [
+                "distillation",
+                "obfuscation",
+                "elucidation",
+                "perversion"
+            ],
+            "correct_answer": "perversion"
+        },
+        {
+            "question": "The academic paper was ____ with theoretical nuances.",
+            "options": [
+                "laden",
+                "bereft",
+                "devoid",
+                "stripped"
+            ],
+            "correct_answer": "laden"
+        },
+        {
+            "question": "Her argument was ____ and devoid of substantive evidence.",
+            "options": [
+                "cogent",
+                "specious",
+                "compelling",
+                "substantive"
+            ],
+            "correct_answer": "specious"
+        },
+        {
+            "question": "The novel's protagonist was a ____ of moral ambiguity.",
+            "options": [
+                "paragon",
+                "embodiment",
+                "exemplar",
+                "archetype"
+            ],
+            "correct_answer": "embodiment"
+        },
+        {
+            "question": "His critique was both ____ and incisive.",
+            "options": [
+                "nuanced",
+                "superficial",
+                "perfunctory",
+                "cursory"
+            ],
+            "correct_answer": "nuanced"
+        },
+        {
+            "question": "The diplomat's language was ____ in its diplomatic subtlety.",
+            "options": [
+                "unequivocal",
+                "ambivalent",
+                "equivocal",
+                "transparent"
+            ],
+            "correct_answer": "equivocal"
+        },
+        {
+            "question": "Her scholarly work was a ____ of interdisciplinary research.",
+            "options": [
+                "culmination",
+                "fragment",
+                "precursor",
+                "antecedent"
+            ],
+            "correct_answer": "culmination"
+        }
+    ]
+}

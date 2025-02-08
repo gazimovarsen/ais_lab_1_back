@@ -1,0 +1,105 @@
+{
+    "level": "A1 (Beginner)",
+    "questions": [
+        {
+            "question": "What is your ____?",
+            "options": [
+                "name",
+                "age",
+                "color",
+                "dog"
+            ],
+            "correct_answer": "name"
+        },
+        {
+            "question": "I ____ from London.",
+            "options": [
+                "am",
+                "is",
+                "are",
+                "will"
+            ],
+            "correct_answer": "am"
+        },
+        {
+            "question": "How ____ years old are you?",
+            "options": [
+                "much",
+                "many",
+                "more",
+                "some"
+            ],
+            "correct_answer": "many"
+        },
+        {
+            "question": "What ____ the time?",
+            "options": [
+                "he",
+                "is",
+                "do",
+                "does"
+            ],
+            "correct_answer": "is"
+        },
+        {
+            "question": "I like ____ pizza.",
+            "options": [
+                "a",
+                "an",
+                "the",
+                "some"
+            ],
+            "correct_answer": "a"
+        },
+        {
+            "question": "____ you hungry?",
+            "options": [
+                "Do",
+                "Does",
+                "Am",
+                "Is"
+            ],
+            "correct_answer": "Are"
+        },
+        {
+            "question": "This ____ my book.",
+            "options": [
+                "is",
+                "am",
+                "are",
+                "was"
+            ],
+            "correct_answer": "is"
+        },
+        {
+            "question": "I have ____ cats.",
+            "options": [
+                "a",
+                "an",
+                "the",
+                "some"
+            ],
+            "correct_answer": "some"
+        },
+        {
+            "question": "Where ____ you from?",
+            "options": [
+                "do",
+                "does",
+                "are",
+                "is"
+            ],
+            "correct_answer": "are"
+        },
+        {
+            "question": "What color ____ your car?",
+            "options": [
+                "do",
+                "does",
+                "is",
+                "are"
+            ],
+            "correct_answer": "is"
+        }
+    ]
+}

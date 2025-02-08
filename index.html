@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English Level Test</title>
+</head>
+<body>
+    <div id="level-selection">
+        <h1>Select Your English Level</h1>
+        <button onclick="selectLevel('A1')">A1 (Beginner)</button>
+        <button onclick="selectLevel('A2')">A2 (Elementary)</button>
+        <button onclick="selectLevel('B1')">B1 (Intermediate)</button>
+        <button onclick="selectLevel('B2')">B2 (Upper Intermediate)</button>
+        <button onclick="selectLevel('C1')">C1 (Advanced)</button>
+        <button onclick="selectLevel('C2')">C2 (Mastery)</button>
+    </div>
+
+    <div id="test-container" style="display: none;">
+        <h2 id="level-display"></h2>
+        <div id="questions"></div>
+        <button onclick="submitTest()">Submit Test</button>
+    </div>
+
+    <div id="results" style="display: none;">
+        <h2>Test Results</h2>
+        <p id="score-display"></p>
+        <p id="recommendation"></p>
+        <button id="next-test-btn" onclick="handleNextTest()">Take Next Test</button>
+    </div>
+
+    <script>
+        let currentTest = null;
+        let currentLevel = null;
+
+        async function selectLevel(level) {
+            currentLevel = level;
+            try {
+                const response = await fetch(`/api/test/${level}`);
+                currentTest = await response.json();
+                displayTest();
+            } catch (error) {
+                console.error('Error loading test:', error);
+                alert('Error loading test. Please try again.');
+            }
+        }
+
+        function displayTest() {
+            document.getElementById('level-selection').style.display = 'none';
+            document.getElementById('test-container').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('level-display').textContent = `Level ${currentLevel} Test`;
+
+            const questionsDiv = document.getElementById('questions');
+            questionsDiv.innerHTML = '';
+
+            currentTest.questions.forEach((q, index) => {
+                const questionHtml = `
+                    <div class="question">
+                        <p>${index + 1}. ${q.question}</p>
+                        ${q.options.map(option => `
+                            <label>
+                                <input type="radio" name="q${index}" value="${option}">
+                                ${option}
+                            </label>
+                        `).join('')}
+                    </div>
+                `;
+                questionsDiv.innerHTML += questionHtml;
+            });
+        }
+
+        async function submitTest() {
+            const answers = [];
+            currentTest.questions.forEach((q, index) => {
+                const selected = document.querySelector(`input[name="q${index}"]:checked`);
+                if (!selected) {
+                    alert('Please answer all questions!');
+                    return;
+                }
+                answers.push({
+                    question: q.question,
+                    selected_answer: selected.value
+                });
+            });
+
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        level: currentLevel,
+                        answers: answers
+                    })
+                });
+
+                const result = await response.json();
+                displayResults(result);
+            } catch (error) {
+                console.error('Error submitting test:', error);
+                alert('Error submitting test. Please try again.');
+            }
+        }
+
+        function displayResults(result) {
+            document.getElementById('test-container').style.display = 'none';
+            document.getElementById('results').style.display = 'block';
+            
+            document.getElementById('score-display').textContent = 
+                `You scored ${result.score} out of 10`;
+            
+            const recommendation = document.getElementById('recommendation');
+            if (result.stay_current) {
+                recommendation.textContent = 
+                    `This is your correct level (${currentLevel})`;
+                document.getElementById('next-test-btn').style.display = 'none';
+            } else {
+                recommendation.textContent = 
+                    `We recommend you take the ${result.next_level} level test`;
+                document.getElementById('next-test-btn').style.display = 'block';
+                currentLevel = result.next_level;
+            }
+        }
+
+        function handleNextTest() {
+            selectLevel(currentLevel);
+        }
+    </script>
+</body>
+</html>

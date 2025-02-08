@@ -1,0 +1,105 @@
+{
+    "level": "B1 (Intermediate)",
+    "questions": [
+        {
+            "question": "If I ____ more money, I would travel more.",
+            "options": [
+                "have",
+                "has",
+                "had",
+                "will have"
+            ],
+            "correct_answer": "had"
+        },
+        {
+            "question": "She suggested ____ to the museum.",
+            "options": [
+                "go",
+                "to go",
+                "going",
+                "goes"
+            ],
+            "correct_answer": "going"
+        },
+        {
+            "question": "I'm not used ____ up early.",
+            "options": [
+                "to get",
+                "getting",
+                "get",
+                "to getting"
+            ],
+            "correct_answer": "to getting"
+        },
+        {
+            "question": "By the time he arrived, we ____ already left.",
+            "options": [
+                "have",
+                "has",
+                "had",
+                "were"
+            ],
+            "correct_answer": "had"
+        },
+        {
+            "question": "The book ____ by a famous author.",
+            "options": [
+                "is written",
+                "was written",
+                "writes",
+                "wrote"
+            ],
+            "correct_answer": "was written"
+        },
+        {
+            "question": "I wish you ____ smoking.",
+            "options": [
+                "stop",
+                "stops",
+                "stopped",
+                "stopping"
+            ],
+            "correct_answer": "would stop"
+        },
+        {
+            "question": "Despite ____ hard, he failed the exam.",
+            "options": [
+                "study",
+                "to study",
+                "studying",
+                "studies"
+            ],
+            "correct_answer": "studying"
+        },
+        {
+            "question": "The movie was so boring that I ____ asleep.",
+            "options": [
+                "fall",
+                "fell",
+                "fallen",
+                "falling"
+            ],
+            "correct_answer": "fell"
+        },
+        {
+            "question": "I would rather ____ to the cinema tonight.",
+            "options": [
+                "go",
+                "goes",
+                "went",
+                "going"
+            ],
+            "correct_answer": "go"
+        },
+        {
+            "question": "He behaves as if he ____ a genius.",
+            "options": [
+                "is",
+                "be",
+                "were",
+                "was"
+            ],
+            "correct_answer": "were"
+        }
+    ]
+}

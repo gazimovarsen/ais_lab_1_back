@@ -1,0 +1,105 @@
+{
+    "level": "B2 (Upper Intermediate)",
+    "questions": [
+        {
+            "question": "The committee ____ been discussing the proposal for hours.",
+            "options": [
+                "has",
+                "have",
+                "is",
+                "are"
+            ],
+            "correct_answer": "has"
+        },
+        {
+            "question": "He speaks as though he ____ an expert on the subject.",
+            "options": [
+                "is",
+                "were",
+                "be",
+                "was"
+            ],
+            "correct_answer": "were"
+        },
+        {
+            "question": "She ____ having worked there for over a decade.",
+            "options": [
+                "claims",
+                "is claiming",
+                "claimed",
+                "would claim"
+            ],
+            "correct_answer": "claims"
+        },
+        {
+            "question": "It is essential that every student ____ the exam.",
+            "options": [
+                "pass",
+                "passes",
+                "passed",
+                "passing"
+            ],
+            "correct_answer": "pass"
+        },
+        {
+            "question": "The more you practice, ____ you'll become.",
+            "options": [
+                "better",
+                "the better",
+                "good",
+                "best"
+            ],
+            "correct_answer": "the better"
+        },
+        {
+            "question": "Had I known the truth, I ____ differently.",
+            "options": [
+                "act",
+                "acted",
+                "would act",
+                "acting"
+            ],
+            "correct_answer": "would have acted"
+        },
+        {
+            "question": "She is looking forward ____ her vacation.",
+            "options": [
+                "to",
+                "for",
+                "at",
+                "in"
+            ],
+            "correct_answer": "to"
+        },
+        {
+            "question": "The project will only succeed ____ everyone cooperates.",
+            "options": [
+                "if",
+                "when",
+                "unless",
+                "although"
+            ],
+            "correct_answer": "if"
+        },
+        {
+            "question": "By the time you arrive, the meeting ____ already started.",
+            "options": [
+                "will have",
+                "would have",
+                "has",
+                "will"
+            ],
+            "correct_answer": "will have"
+        },
+        {
+            "question": "He was accused ____ stealing confidential documents.",
+            "options": [
+                "of",
+                "for",
+                "in",
+                "with"
+            ],
+            "correct_answer": "of"
+        }
+    ]
+}
