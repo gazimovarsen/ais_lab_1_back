@@ -29,7 +29,9 @@ def load_test_data(level: str):
 
 @app.get("/")
 async def read_root():
-    return FileResponse("index.html")
+    return FileResponse("Tests.html")
+    
+
 
 @app.get("/api/test/{level}")
 async def get_test(level: str):
