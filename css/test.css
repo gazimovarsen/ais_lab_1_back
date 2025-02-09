@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-content {
+    padding-top: 100px; /* Отступ равен высоте header */
+    padding-bottom: 50px;
+}
+
+#level-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#test-container,
+#results {
+    display: none; /* Убедитесь, что тесты и результаты скрыты по умолчанию */
+}
+
+#level-display {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    display: block; /* Убедитесь, что элемент всегда отображается */
+}
+
+
+
+#level-selection button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;           /* Одинаковая ширина для кнопок */
+    text-align: center;     /* Текст по центру */
+}
+
+#level-selection button:hover {
+    background-color: #45a049;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.button-container {
+    display: flex; /* Используем flexbox для размещения кнопок */
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    gap: 20px; /* Расстояние между кнопками */
+    margin-top: 20px; /* Отступ сверху от текста */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #45a049;
+}
+
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#test-container {
+    display: flex;
+    flex-direction: column; /* Вопросы располагаются вертикально */
+    align-items: center;    /* Центрируем вопросы по горизонтали */
+    gap: 20px;              /* Отступы между вопросами */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;       /* Ограничиваем ширину контейнера */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#test-container > button {
+    display: block;
+    margin: 20px auto 0 auto; /* Центрируем кнопку с помощью auto для левого и правого отступа */
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#test-container > button:hover {
+    background-color: #45a049;
+}
+
+.question {
+    width: 100%;            /* Вопрос занимает всю ширину контейнера */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #4caf50;
+    border-radius: 5px;
+    margin-bottom: 15px;    /* Добавляем отступы между блоками вопросов */
+}
+
+.question:last-child {
+    margin-bottom: 0;       /* Убираем нижний отступ у последнего вопроса */
+}
+
+.question p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    text-align: center;     /* Текст вопроса по центру */
+}
+
+
+label {
+    display: block;
+    margin: 10px 0;
+    text-align: left;       /* Выравнивание вариантов ответа по левому краю */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#results {
+    text-align: center;
+}
+
+#next-test-btn {
+    background-color: #007bff;
+}
+
+#next-test-btn:hover {
+    background-color: #0056b3;
+}
