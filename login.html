@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Education</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <style>
+        .auth-form { max-width: 400px; margin: 50px auto; padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); position: relative; }
+        .hidden { display: none; }
+        .form-control { margin-bottom: 15px; }
+        .alert-icon { display: flex; align-items: center; background-color: #fff3cd; border: 1px solid #ffeeba; padding: 10px; border-radius: 5px; margin-bottom: 10px; color: #856404; position: absolute; top: -50px; left: 0; right: 0; }
+        .alert-icon i { margin-right: 10px; color: #856404; }
+    </style>
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div class="contregist">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form id="registrationForm" action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Фамилия</span>
+                        <input type="text" placeholder="Введите фамилию" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Имя</span>
+                        <input type="text" placeholder="Введите имя" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Отчество</span>
+                        <input type="text" placeholder="Введите отчество" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Почта</span>
+                        <input type="email" id="email" placeholder="Введите почту" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Пароль</span>
+                        <div style="position: relative;">
+                            <input type="password" id="password" placeholder="Введите пароль" required>
+                            <span class="toggle-password" onclick="togglePassword('password')" style="position: absolute; right: 10px; top: 8px; cursor: pointer;">
+                                👁️
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Подтверждение пароля</span>
+                        <div style="position: relative;">
+                            <input type="password" id="confirmPassword" placeholder="Подтвердите пароль" required>
+                            <span class="toggle-password" onclick="togglePassword('confirmPassword')" style="position: absolute; right: 10px; top: 8px; cursor: pointer;">
+                                👁️
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function togglePassword(id) {
+            const input = document.getElementById(id);
+            if (input.type === 'password') {
+                input.type = 'text';
+            } else {
+                input.type = 'password';
+            }
+        }
+    
+        document.getElementById('registrationForm').addEventListener('submit', function (e) {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+    
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Введите корректную почту с @ и .');
+                e.preventDefault();
+                return;
+            }
+    
+            if (password !== confirmPassword) {
+                alert('Пароли не совпадают');
+                e.preventDefault();
+            }
+        });
+    </script>
+    
+
+
+
+    <script>
+        fetch('header.html').then(response => response.text()).then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+        fetch('footer.html').then(response => response.text()).then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+
+    <script src="js/login.js"></script>
+</body>
+
+
+
+</html>

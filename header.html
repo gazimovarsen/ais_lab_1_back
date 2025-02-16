@@ -1,0 +1,79 @@
+<header>
+    <div class="header-area ">
+       <!-- <div class="header-top_area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header_top_wrap d-flex justify-content-between align-items-center">
+                            <div class="text_wrap">
+                                <p> <span>EnglishGang</span></p>
+                            </div>
+                            <div class="text_wrap">
+                                <p><a href="#"> <i class="ti-user"></i>  Войти</a> <a href="#">Регистрация</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> --> 
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header_wrap d-flex justify-content-between align-items-center">
+                            <div class="header_left">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="img/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header_right d-flex align-items-center">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a  href="index.html">Главная</a></li>
+                                            <li><a href="Courses.html">Курсы</a></li>
+                                            <li><a href="Teachers.html">Преподаватели</a></li>
+                                            <li><a href="blog.html">О нас</a></li>
+                                            <li><a href="Tests.html">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="Appointment">
+                                    <a href="kabinet.html" id="openModalBtn" class="custom_test_button">Авторизоваться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('registrationModal');
+
+    openModalBtn.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+<!-- header-end -->
