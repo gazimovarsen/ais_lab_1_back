@@ -43,11 +43,15 @@
 
 <body>
     <div id="header-container"></div>
-
-    <div class="contregist">
-        <div class="title">Registration</div>
+    <div class="contregist" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 600px; margin: 50px auto; padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <div class="title" style="font-size: 24px; font-weight: bold; margin-bottom: 15px; text-align: center;">Авторизация</div>
         <div class="content">
-            <form id="registrationForm" action="#">
+            <div class="switch-buttons" style="margin-bottom: 15px; display: flex; justify-content: center; gap: 15px;">
+                <button type="button" onclick="showLogin()" class="switch-btn active" id="loginButton">Авторизация</button>
+                <button type="button" onclick="showRegistration()" class="switch-btn" id="regButton">Регистрация</button>
+            </div>
+    
+            <form id="registrationForm" action="#" style="display: none;">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Фамилия</span>
@@ -69,27 +73,65 @@
                         <span class="details">Пароль</span>
                         <div style="position: relative;">
                             <input type="password" id="password" placeholder="Введите пароль" required>
-                            <span class="toggle-password" onclick="togglePassword('password')" style="position: absolute; right: 10px; top: 8px; cursor: pointer;">
-                                👁️
-                            </span>
+                            <span class="toggle-password" onclick="togglePassword('password')" style="position: absolute; right: 10px; top: 8px; cursor: pointer;"></span>
                         </div>
                     </div>
                     <div class="input-box">
                         <span class="details">Подтверждение пароля</span>
                         <div style="position: relative;">
                             <input type="password" id="confirmPassword" placeholder="Подтвердите пароль" required>
-                            <span class="toggle-password" onclick="togglePassword('confirmPassword')" style="position: absolute; right: 10px; top: 8px; cursor: pointer;">
-                                👁️
-                            </span>
+                            <span class="toggle-password" onclick="togglePassword('confirmPassword')" style="position: absolute; right: 10px; top: 8px; cursor: pointer;"></span>
                         </div>
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Зарегистрироваться">
+                </div>
+            </form>
+    
+            <form id="loginForm" action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Почта</span>
+                        <input type="email" id="loginEmail" placeholder="Введите почту" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Пароль</span>
+                        <div style="position: relative;">
+                            <input type="password" id="loginPassword" placeholder="Введите пароль" required>
+                            <span class="toggle-password" onclick="togglePassword('loginPassword')" style="position: absolute; right: 10px; top: 8px; cursor: pointer;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Войти">
                 </div>
             </form>
         </div>
     </div>
+
+    <div id="footer-container"></div>
+    
+    <style>
+        .switch-btn {
+            padding: 10px 20px;
+            background-color: #1D3D66;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+       .switch-btn:hover, .switch-btn.active {
+            background-color: #e9ecef;
+            color: #1D3D66;
+            border: 1px solid #1D3D66;
+        }
+
+            
+
+    </style>
     
     <script>
         function togglePassword(id) {
@@ -100,6 +142,26 @@
                 input.type = 'password';
             }
         }
+    
+        function showRegistration() {
+            document.getElementById('registrationForm').style.display = 'block';
+            document.getElementById('loginForm').style.display = 'none';
+    
+            document.getElementById('regButton').classList.add('active');
+            document.getElementById('loginButton').classList.remove('active');
+        }
+    
+        function showLogin() {
+            document.getElementById('registrationForm').style.display = 'none';
+            document.getElementById('loginForm').style.display = 'block';
+    
+            document.getElementById('loginButton').classList.add('active');
+            document.getElementById('regButton').classList.remove('active');
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            showLogin();
+        });
     
         document.getElementById('registrationForm').addEventListener('submit', function (e) {
             const email = document.getElementById('email').value;
@@ -117,7 +179,18 @@
                 e.preventDefault();
             }
         });
+    
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+    
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Введите корректную почту с @ и .');
+                e.preventDefault();
+            }
+        });
     </script>
+    
     
 
 
