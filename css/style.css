@@ -5672,88 +5672,80 @@ form .button input:hover {
 }
 
 /* Responsive media query code for mobile devices */
-@media(max-width: 584px) {
-  .container {
-    max-width: 100%;
-  }
 
-  form .user-details .input-box {
-    margin-bottom: 15px;
-    width: 100%;
-  }
 
-  form .category {
-    width: 100%;
-  }
 
-  .content form .user-details {
-    max-height: 300px;
-    overflow-y: scroll;
-  }
-
-  .user-details::-webkit-scrollbar {
-    width: 5px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
         /* Стили модального окна */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
 
-        .contregist {
-            background-color: #fff;
-            padding: 25px 30px;
-            border-radius: 5px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-            width: 400px;
-        }
+.contregist {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  width: 400px;
+}
 
-        .input-box {
-            margin-bottom: 15px;
-        }
+.input-box {
+  margin-bottom: 15px;
+}
 
-        .input-box input {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
+.input-box input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
 
-        .button input {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.button input {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-        .button input:hover {
-            background-color: #45a049;
-        }
+.button input:hover {
+  background-color: #45a049;
+}
 
-        .close-btn {
-            float: right;
-            cursor: pointer;
-            font-size: 20px;
-        }
-    </style>
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+  
+.switch-btn {
+  padding: 10px 20px;
+  background-color: #1D3D66;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
+.switch-btn:hover {
+  background-color: #e9ecef;
+  color: #1D3D66;
+  border: 1px solid #1D3D66;
+}
 /*# sourceMappingURL=style.css.map */
