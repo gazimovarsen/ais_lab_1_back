@@ -5748,4 +5748,28 @@ body {
   color: #1D3D66;
   border: 1px solid #1D3D66;
 }
-/*# sourceMappingURL=style.css.map */
+
+.single_service {
+  padding: 20px;
+  height: auto;
+  min-height: 100px;
+}
+
+.single_service .icon {
+  margin-right: 20px;
+}
+
+.single_service .icon i {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.single_service .service_info {
+  flex: 1;
+}
+
+.single_service .service_info h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
